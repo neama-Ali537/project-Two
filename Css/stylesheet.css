@@ -1,0 +1,481 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #0b9586;
+  --yelow-color: rgba(255, 187, 28, 1);
+
+  --text-color: #333;
+}
+/* start nav bar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color);
+  padding: 20px;
+  height: 60px;
+  list-style-type: none;
+}
+.nav {
+  display: flex;
+  width: 90%;
+  position: relative;
+}
+.nav li {
+  list-style-type: none;
+  font-weight: bold;
+}
+.logo-img {
+  width: 100px;
+  height: 40px;
+  opacity: 0.6;
+  margin-left: 40px;
+  border-radius: 1px;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
+
+  position: absolute;
+  top: 25px;
+  left: 100px;
+}
+.links li {
+  margin-left: 70px;
+}
+.links li a,
+.nav .contact li a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+}
+.nav .contact {
+  margin-left: 830px;
+
+  position: absolute;
+  top: 25px;
+  left: 100px;
+}
+.links li a:hover,
+.nav .contact li a:hover {
+  border: 2px solid rgb(95, 93, 93);
+}
+/* End nav bar */
+/* start cover page */
+.cover {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../Css/imgs/solar-panels-meadow\ 1.png);
+  /* padding-top: 0; */
+  background-size: cover;
+  position: relative;
+}
+.cover-content {
+  color: white;
+  padding: 100px;
+}
+.cover-content .cover-h {
+  width: 360px;
+  font-size: 35px;
+}
+.cover-content .cover-P {
+  font-size: 16px;
+  line-height: 2;
+  width: 490px;
+}
+.cover .btns {
+  position: relative;
+  padding: 100px;
+}
+.cover .btns .cover-btn1,
+.cover .btns .cover-btn2 {
+  position: absolute;
+  top: -90px;
+  cursor: pointer;
+}
+.cover .btns .cover-btn1 {
+  width: 150px;
+  height: 50px;
+  border-radius: 35px;
+  border: none;
+  color: white;
+  background-color: var(--background-color);
+  font-size: 15px;
+}
+.cover .btns .cover-btn2 {
+  width: 190px;
+  left: 32%;
+  height: 50px;
+  border-radius: 35px;
+  border: none;
+  background-color: var(--yelow-color);
+  font-size: 15px;
+  color: #333;
+}
+
+/* end cover page */
+/* start page 3 */
+.page3 {
+  padding: 80px;
+  margin: 40px;
+  height: 70vh;
+}
+.page3-content {
+  position: relative;
+}
+.page3-content .imgs img {
+  width: 250px;
+}
+.page3-content .imgs {
+  position: absolute;
+  right: 0%;
+}
+.yelowContent {
+  position: absolute;
+  background-color: var(--yelow-color);
+  width: 140px;
+  height: 120px;
+  border-radius: 5px;
+  color: rgb(95, 93, 93);
+  font-size: 11px;
+  top: 164px;
+  left: -35px;
+}
+.page3-heading {
+  width: 320px;
+}
+.page3-p {
+  color: rgb(95, 93, 93);
+  width: 450px;
+  font-size: 14px;
+  text-align: center;
+}
+.yelow-p {
+  margin-top: 35px;
+}
+.yelow-icon i {
+  margin-top: 10px;
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.ps-geen {
+  color: green;
+}
+.page3-h p {
+  font-weight: 20px;
+}
+/* end page 3 */
+/* start page-4 */
+.page-4 {
+  background-image: url(./imgs/8116\ 1.png);
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+
+  margin: auto;
+  position: relative;
+}
+.page-4 .page-4-content {
+  padding: 80px;
+  margin: 40px;
+  color: white;
+}
+.cover-btn2 {
+  position: absolute;
+  width: 170px;
+  top: 210px;
+  left: 15%;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 35px;
+  border: none;
+  background-color: var(--yelow-color);
+  font-size: 15px;
+  color: #333;
+}
+/* end page-4 */
+/* start page-5 grid */
+.grid-content {
+  text-align: center;
+}
+.grid-content h1 {
+  font-size: 30px;
+}
+.grid-content p {
+  font-size: 13px;
+  color: #535252;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 50px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 250px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+button {
+  color: #00ffc8;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+/* end page-5 */
+/* start over lay page-6 */
+.image-container {
+  position: relative;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.overlay h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.overlay p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+/* end over lay page6 */
+/* start pa-7 */
+.page-7 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 50px;
+}
+.card-content {
+  width: 300px;
+  height: 450px;
+}
+.page-7 .card {
+  width: 200px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.page-7 .card img {
+  width: 100px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.page-7 button {
+  background-color: var(--background-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* end page-7 */
+/* start page-8 */
+.Values .card{
+  height: 150px;
+  width: 300px;
+  background-color:#e2f9f4;
+  margin: auto;
+}
+.Values .card i{
+  color: var(--background-color);
+  font-size: 30px;
+  cursor: pointer;
+}
+/* start page-8 */
+/* start final page  */
+.container-final {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  margin: 40px;
+}
+
+.left, .right {
+  flex: 1;
+}
+
+.left  i{
+  font-size: 30px;
+  color: #0b9586;
+}
+
+.right {
+  text-align: left;
+}
+.right h5{
+  color: #0b9586;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info {
+  font-size: 14px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.job {
+  color: gray;
+}
+/* end finnal page */
+/* start footer */
+.footer {
+  background-color: rgb(5, 33, 59);
+  color: white;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-subscribe form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-subscribe input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.checkbox-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-section input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.footer-subscribe button {
+  padding: 10px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  background-color: #777;
+}
+
+/* end footer */
